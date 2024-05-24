@@ -1,29 +1,35 @@
+#topButton {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+
 .gallery {
-  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  background-color: black;
 }
-
-.gallery {
-  width: 100%;  
-}
-
-.gallery {
-  
-}
-
-
-
-
-
-
-.slidin-from-left {
-  animation-name: slidin-from-left;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  ;
-}
-
-@keyframes slidin-from-left {
-  from {
-    transform: translateX(-0px);
-  }
+.gallery .image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%; /* Adjust as needed */
+  height: 0;
+  padding-bottom: 75%; /* Adjust as needed */
+  margin-bottom: 10px;
 }
